@@ -35,7 +35,7 @@ class _BaseWidget<T extends ChangeNotifier> extends State<BaseWidget<T>>
   void initState() {
     super.initState();
     _controller = AnimationController(
-        vsync: this,
+        // vsync: this,
         duration: widget.animate ? widget.duration : Duration(milliseconds: 0));
     _controller.forward(from: 0.0);
     _model = widget.viewModel;
